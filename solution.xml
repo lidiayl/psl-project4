@@ -1,0 +1,677 @@
+<ImportExportXml version="9.2.23105.256" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SolutionManifest>
+    <UniqueName>PSLProject4</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="PSL-Project4" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.0.0.1</Version>
+    <Managed>0</Managed>
+    <Publisher>
+      <UniqueName>LL</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="LL" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions />
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>ll</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>10000</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="contact" behavior="0" />
+      <RootComponent type="1" schemaName="ll_movie" behavior="0" />
+      <RootComponent type="1" schemaName="ll_rating" behavior="0" />
+      <RootComponent type="9" schemaName="ll_rating" behavior="0" />
+      <RootComponent type="60" id="{70ad8b15-e3f3-4d7d-9e4b-16cb4e51b484}" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_externalidentity" displayName="External Identity" solution="PowerPages_RuntimeCore (1.0.2308.4)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_externalidentity" displayName="External Identity" solution="PowerPages_RuntimeCore (1.0.2308.4)" />
+        <Dependent type="60" displayName="Portal Contact (Enhanced)" parentDisplayName="Contact" id="{c1c97961-2d42-4103-abf8-2fe2bdf38224}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_invitation" displayName="Invitation" solution="PowerPages_RuntimeCore (1.0.2308.4)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_webformsession" displayName="Multistep Form Session" solution="PowerPages_RuntimeCore (1.0.2308.4)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_contactkpiitem" displayName="Contact KPI Item" solution="RelationshipAnalytics (9.0.3.3196)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_contactkpiitem" displayName="Contact KPI Item" solution="RelationshipAnalytics (9.0.3.3196)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_contactkpiitem_contact_contactkpiid" displayName="msdyn_msdyn_contactkpiitem_contact_contactkpiid" parentSchemaName="msdyn_contactkpiitem" parentDisplayName="Contact KPI Item" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_conversationparticipantinsights" displayName="Conversation Participant Insights" solution="msdyn_Conversation_Intelligence (9.0.1.1139)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_dailycontactkpiitem" displayName="Daily kpis for contact" solution="RelationshipAnalytics (9.0.3.3196)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_linkedentityattributevalidity" displayName="Linked Entity Attribute Validity" solution="msdyn_leadhygiene (9.1.2310.1001)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_liveconversation" displayName="Ongoing conversation (Deprecated)" solution="OmnichannelBase (1.10.0.44)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_mostcontacted" displayName="Most Contacted" solution="RelationshipAnalytics (9.0.3.3196)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_mostcontactedby" displayName="Most Contacted By" solution="RelationshipAnalytics (9.0.3.3196)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_ocliveworkitem" displayName="Conversation" solution="OmnichannelBase (1.10.0.44)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_orgchartnode" displayName="Microsoft Orgchart node entity" solution="msdyn_LinkedInExtensions (9.0.23101.10011)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_preferredagent" displayName="Preferred Agent" solution="UnifiedRouting (1.0.0.4586)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_sabackupdiagnostic" displayName="sabackupdiagnostic" solution="msdyn_segment (9.1.2310.1001)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_salescopilotinsight" displayName="Sales Copilot Insight" solution="msdyn_SalesCopilot (9.1.23093.10008)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_salesroutingdiagnostic" displayName="salesroutingdiagnostic" solution="msdyn_segment (9.1.2310.1001)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_salessuggestion" displayName="Insight" solution="msdyn_acceleratedsales (9.1.23101.10009)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_sequencetarget" displayName="Sequence Target" solution="msdyn_Sequence (9.1.2310.1001)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_taggedrecord" displayName="Tagged Record" solution="msdyn_VivaSalesCore (9.5.23193.5)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_customerjourney" displayName="Customer journey" solution="MicrosoftDynamics_Marketing (1.99.2020.0)" />
+        <Dependent type="10" schemaName="msdyncrm_msdyncrm_customerjourney_contact_customerjourneyid" displayName="msdyncrm_msdyncrm_customerjourney_contact_customerjourneyid" parentSchemaName="msdyncrm_customerjourney" parentDisplayName="Customer journey" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_customerjourneycustomchannelactivity" displayName="Custom channel activity" solution="MicrosoftDynamics_Marketing (1.99.2020.0)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_defaultmarketingsetting" displayName="Default settings" solution="MicrosoftDynamics_Marketing (1.99.2020.0)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_geopin" displayName="Geo pin" solution="MicrosoftDynamics_Marketing (1.99.2020.0)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_linkedinformsubmission" displayName="LinkedIn Lead Gen Form Submission" solution="LinkedInLeadGenIntegration (1.45.1082.0)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_marketingemail" displayName="Marketing email" solution="MicrosoftDynamics_Marketing (1.99.2020.0)" />
+        <Dependent type="10" schemaName="msdyncrm_msdyncrm_marketingemail_contact_emailid" displayName="msdyncrm_msdyncrm_marketingemail_contact_emailid" parentSchemaName="msdyncrm_marketingemail" parentDisplayName="Marketing email" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_marketingemailtestsend" displayName="Marketing email test send" solution="MicrosoftDynamics_Marketing (1.99.2020.0)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_marketingform" displayName="Marketing form" solution="MicrosoftDynamics_Marketing (1.99.2020.0)" />
+        <Dependent type="10" schemaName="msdyncrm_msdyncrm_marketingform_contact_marketingformid" displayName="msdyncrm_msdyncrm_marketingform_contact_marketingformid" parentSchemaName="msdyncrm_marketingform" parentDisplayName="Marketing form" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_marketingformsubmission" displayName="Marketing form submission" solution="MicrosoftDynamics_Marketing (1.99.2020.0)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_marketingpage" displayName="Marketing page" solution="MicrosoftDynamics_Marketing (1.99.2020.0)" />
+        <Dependent type="10" schemaName="msdyncrm_msdyncrm_marketingpage_contact_marketingpageid" displayName="msdyncrm_msdyncrm_marketingpage_contact_marketingpageid" parentSchemaName="msdyncrm_marketingpage" parentDisplayName="Marketing page" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_quicksendemail" displayName="Quick Send Email" solution="MicrosoftDynamics_QuickSend (1.99.2020.0)" />
+        <Dependent type="10" schemaName="msdyncrm_quicksendemail_contact" displayName="msdyncrm_quicksendemail_contact" parentSchemaName="msdyncrm_quicksendemail" parentDisplayName="Quick Send Email" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_segment" displayName="Segment" solution="MicrosoftDynamics_Marketing (1.99.2020.0)" />
+        <Dependent type="10" schemaName="msdyncrm_msdyncrm_segment_contact" displayName="msdyncrm_msdyncrm_segment_contact" parentSchemaName="msdyncrm_segment" parentDisplayName="Segment" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdynmkt_email" displayName="Email" solution="DynamicsMKT_EmailChannel (1.1.32267.119)" />
+        <Dependent type="10" schemaName="msdynmkt_msdynmkt_email_contact_emailid" displayName="msdynmkt_msdynmkt_email_contact_emailid" parentSchemaName="msdynmkt_email" parentDisplayName="Email" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdynmkt_journey" displayName="Journey" solution="DynamicsMKT_CxpOrchestrationUI (1.1.32267.119)" />
+        <Dependent type="10" schemaName="msdynmkt_msdynmkt_journey_contact_customerjourneyid" displayName="msdynmkt_msdynmkt_journey_contact_customerjourneyid" parentSchemaName="msdynmkt_journey" parentDisplayName="Journey" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdynmkt_marketingform" displayName="Form" solution="DynamicsMKT_Forms (1.1.32267.119)" />
+        <Dependent type="10" schemaName="msdynmkt_msdynmkt_marketingform_contact_marketingformid" displayName="msdynmkt_msdynmkt_marketingform_contact_marketingformid" parentSchemaName="msdynmkt_marketingform" parentDisplayName="Form" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_attendeepass" displayName="Attendee Pass" solution="MicrosoftDynamics_EventManagement (1.51.32267.18)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_building" displayName="Building" solution="MicrosoftDynamics_EventManagement (1.51.32267.18)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_checkin" displayName="Check-in" solution="MicrosoftDynamics_EventManagement (1.51.32267.18)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_checkin" displayName="Check-in" solution="MicrosoftDynamics_EventManagement (1.51.32267.18)" />
+        <Dependent type="10" schemaName="msevtmgt_checkin_contact" displayName="msevtmgt_checkin_contact" parentSchemaName="msevtmgt_checkin" parentDisplayName="Check-in" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_event" displayName="Event" solution="MicrosoftDynamics_EventManagement (1.51.32267.18)" />
+        <Dependent type="10" schemaName="msevtmgt_msevtmgt_event_contact_originatingeventid" displayName="msevtmgt_msevtmgt_event_contact_originatingeventid" parentSchemaName="msevtmgt_event" parentDisplayName="Event" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_eventpurchase" displayName="Event Purchase" solution="MicrosoftDynamics_EventManagement (1.51.32267.18)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_eventpurchaseattendee" displayName="Event Purchase Attendee" solution="MicrosoftDynamics_EventManagement (1.51.32267.18)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_eventregistration" displayName="Event Registration" solution="MicrosoftDynamics_EventManagement (1.51.32267.18)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_eventteammember" displayName="Event Team Member" solution="MicrosoftDynamics_EventManagement (1.51.32267.18)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_hotel" displayName="Hotel" solution="MicrosoftDynamics_EventManagement (1.51.32267.18)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_hotelroomallocation" displayName="Hotel Room Allocation" solution="MicrosoftDynamics_EventManagement (1.51.32267.18)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_room" displayName="Room" solution="MicrosoftDynamics_EventManagement (1.51.32267.18)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_sessionregistration" displayName="Session Registration" solution="MicrosoftDynamics_EventManagement (1.51.32267.18)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_speaker" displayName="Speaker" solution="MicrosoftDynamics_EventManagement (1.51.32267.18)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_venue" displayName="Venue" solution="MicrosoftDynamics_EventManagement (1.51.32267.18)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_waitlistitem" displayName="Waitlist Item" solution="MicrosoftDynamics_EventManagement (1.51.32267.18)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msgdpr_gdprconsentchangerecord" displayName="GDPR consent change record" solution="MicrosoftDynamics_MktConsentManagement (1.99.2020.0)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="mspp_webrole" displayName="Web Role" solution="PowerPages_Apps (1.0.2309.1)" />
+        <Dependent type="60" displayName="Portal Contact (Enhanced)" parentDisplayName="Contact" id="{c1c97961-2d42-4103-abf8-2fe2bdf38224}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="adx_contact_externalidentity" displayName="adx_contact_externalidentity" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeCore (1.0.2308.4)" />
+        <Dependent type="60" displayName="Portal Contact (Enhanced)" parentDisplayName="Contact" id="{c1c97961-2d42-4103-abf8-2fe2bdf38224}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_msdyn_contactkpiitem_contact_contactkpiid" displayName="msdyn_msdyn_contactkpiitem_contact_contactkpiid" parentSchemaName="msdyn_contactkpiitem" parentDisplayName="Contact KPI Item" solution="RelationshipAnalytics (9.0.3.3196)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_contactkpiitem_contact_contactkpiid" displayName="msdyn_msdyn_contactkpiitem_contact_contactkpiid" parentSchemaName="msdyn_contactkpiitem" parentDisplayName="Contact KPI Item" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyncrm_msdyncrm_customerjourney_contact_customerjourneyid" displayName="msdyncrm_msdyncrm_customerjourney_contact_customerjourneyid" parentSchemaName="msdyncrm_customerjourney" parentDisplayName="Customer journey" solution="MicrosoftDynamics_Marketing (1.99.2020.0)" />
+        <Dependent type="10" schemaName="msdyncrm_msdyncrm_customerjourney_contact_customerjourneyid" displayName="msdyncrm_msdyncrm_customerjourney_contact_customerjourneyid" parentSchemaName="msdyncrm_customerjourney" parentDisplayName="Customer journey" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyncrm_msdyncrm_marketingemail_contact_emailid" displayName="msdyncrm_msdyncrm_marketingemail_contact_emailid" parentSchemaName="msdyncrm_marketingemail" parentDisplayName="Marketing email" solution="MicrosoftDynamics_Marketing (1.99.2020.0)" />
+        <Dependent type="10" schemaName="msdyncrm_msdyncrm_marketingemail_contact_emailid" displayName="msdyncrm_msdyncrm_marketingemail_contact_emailid" parentSchemaName="msdyncrm_marketingemail" parentDisplayName="Marketing email" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyncrm_msdyncrm_marketingform_contact_marketingformid" displayName="msdyncrm_msdyncrm_marketingform_contact_marketingformid" parentSchemaName="msdyncrm_marketingform" parentDisplayName="Marketing form" solution="MicrosoftDynamics_Marketing (1.99.2020.0)" />
+        <Dependent type="10" schemaName="msdyncrm_msdyncrm_marketingform_contact_marketingformid" displayName="msdyncrm_msdyncrm_marketingform_contact_marketingformid" parentSchemaName="msdyncrm_marketingform" parentDisplayName="Marketing form" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msgdpr_msdyncrm_marketingform_contact_consentchangesourceformId" displayName="msgdpr_msdyncrm_marketingform_contact_consentchangesourceformId" parentSchemaName="msdyncrm_marketingform" parentDisplayName="Marketing form" solution="MicrosoftDynamics_MktConsentManagement (1.99.2020.0)" />
+        <Dependent type="10" schemaName="msdyncrm_msdyncrm_marketingform_contact_marketingformid" displayName="msdyncrm_msdyncrm_marketingform_contact_marketingformid" parentSchemaName="msdyncrm_marketingform" parentDisplayName="Marketing form" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyncrm_msdyncrm_marketingpage_contact_marketingpageid" displayName="msdyncrm_msdyncrm_marketingpage_contact_marketingpageid" parentSchemaName="msdyncrm_marketingpage" parentDisplayName="Marketing page" solution="MicrosoftDynamics_Marketing (1.99.2020.0)" />
+        <Dependent type="10" schemaName="msdyncrm_msdyncrm_marketingpage_contact_marketingpageid" displayName="msdyncrm_msdyncrm_marketingpage_contact_marketingpageid" parentSchemaName="msdyncrm_marketingpage" parentDisplayName="Marketing page" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyncrm_quicksendemail_contact" displayName="msdyncrm_quicksendemail_contact" parentSchemaName="msdyncrm_quicksendemail" parentDisplayName="Quick Send Email" solution="MicrosoftDynamics_QuickSend (1.99.2020.0)" />
+        <Dependent type="10" schemaName="msdyncrm_quicksendemail_contact" displayName="msdyncrm_quicksendemail_contact" parentSchemaName="msdyncrm_quicksendemail" parentDisplayName="Quick Send Email" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyncrm_msdyncrm_segment_contact" displayName="msdyncrm_msdyncrm_segment_contact" parentSchemaName="msdyncrm_segment" parentDisplayName="Segment" solution="MicrosoftDynamics_Marketing (1.99.2020.0)" />
+        <Dependent type="10" schemaName="msdyncrm_msdyncrm_segment_contact" displayName="msdyncrm_msdyncrm_segment_contact" parentSchemaName="msdyncrm_segment" parentDisplayName="Segment" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdynmkt_msdynmkt_email_contact_emailid" displayName="msdynmkt_msdynmkt_email_contact_emailid" parentSchemaName="msdynmkt_email" parentDisplayName="Email" solution="DynamicsMKT_Forms (1.1.32267.119)" />
+        <Dependent type="10" schemaName="msdynmkt_msdynmkt_email_contact_emailid" displayName="msdynmkt_msdynmkt_email_contact_emailid" parentSchemaName="msdynmkt_email" parentDisplayName="Email" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdynmkt_msdynmkt_journey_contact_customerjourneyid" displayName="msdynmkt_msdynmkt_journey_contact_customerjourneyid" parentSchemaName="msdynmkt_journey" parentDisplayName="Journey" solution="DynamicsMKT_Forms (1.1.32267.119)" />
+        <Dependent type="10" schemaName="msdynmkt_msdynmkt_journey_contact_customerjourneyid" displayName="msdynmkt_msdynmkt_journey_contact_customerjourneyid" parentSchemaName="msdynmkt_journey" parentDisplayName="Journey" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdynmkt_msdynmkt_marketingform_contact_marketingformid" displayName="msdynmkt_msdynmkt_marketingform_contact_marketingformid" parentSchemaName="msdynmkt_marketingform" parentDisplayName="Form" solution="DynamicsMKT_Forms (1.1.32267.119)" />
+        <Dependent type="10" schemaName="msdynmkt_msdynmkt_marketingform_contact_marketingformid" displayName="msdynmkt_msdynmkt_marketingform_contact_marketingformid" parentSchemaName="msdynmkt_marketingform" parentDisplayName="Form" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msevtmgt_checkin_contact" displayName="msevtmgt_checkin_contact" parentSchemaName="msevtmgt_checkin" parentDisplayName="Check-in" solution="MicrosoftDynamics_EventManagement (1.51.32267.18)" />
+        <Dependent type="10" schemaName="msevtmgt_checkin_contact" displayName="msevtmgt_checkin_contact" parentSchemaName="msevtmgt_checkin" parentDisplayName="Check-in" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msevtmgt_msevtmgt_event_contact_originatingeventid" displayName="msevtmgt_msevtmgt_event_contact_originatingeventid" parentSchemaName="msevtmgt_event" parentDisplayName="Event" solution="MicrosoftDynamics_EventManagement (1.51.32267.18)" />
+        <Dependent type="10" schemaName="msevtmgt_msevtmgt_event_contact_originatingeventid" displayName="msevtmgt_msevtmgt_event_contact_originatingeventid" parentSchemaName="msevtmgt_event" parentDisplayName="Event" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_identity_accessfailedcount" displayName="Access Failed Count" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeCore (1.0.2308.4)" />
+        <Dependent type="60" displayName="Portal Contact (Enhanced)" parentDisplayName="Contact" id="{c1c97961-2d42-4103-abf8-2fe2bdf38224}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_identity_emailaddress1confirmed" displayName="Email Confirmed" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeCore (1.0.2308.4)" />
+        <Dependent type="60" displayName="Portal Contact (Enhanced)" parentDisplayName="Contact" id="{c1c97961-2d42-4103-abf8-2fe2bdf38224}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_identity_locallogindisabled" displayName="Local Login Disabled" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeCore (1.0.2308.4)" />
+        <Dependent type="60" displayName="Portal Contact (Enhanced)" parentDisplayName="Contact" id="{c1c97961-2d42-4103-abf8-2fe2bdf38224}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_identity_lockoutenabled" displayName="Lockout Enabled" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeCore (1.0.2308.4)" />
+        <Dependent type="60" displayName="Portal Contact (Enhanced)" parentDisplayName="Contact" id="{c1c97961-2d42-4103-abf8-2fe2bdf38224}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_identity_lockoutenddate" displayName="Lockout End Date" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeCore (1.0.2308.4)" />
+        <Dependent type="60" displayName="Portal Contact (Enhanced)" parentDisplayName="Contact" id="{c1c97961-2d42-4103-abf8-2fe2bdf38224}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_identity_logonenabled" displayName="Login Enabled" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeCore (1.0.2308.4)" />
+        <Dependent type="60" displayName="Portal Contact (Enhanced)" parentDisplayName="Contact" id="{c1c97961-2d42-4103-abf8-2fe2bdf38224}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_identity_mobilephoneconfirmed" displayName="Mobile Phone Confirmed" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeCore (1.0.2308.4)" />
+        <Dependent type="60" displayName="Portal Contact (Enhanced)" parentDisplayName="Contact" id="{c1c97961-2d42-4103-abf8-2fe2bdf38224}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_identity_securitystamp" displayName="Security Stamp" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeCore (1.0.2308.4)" />
+        <Dependent type="60" displayName="Portal Contact (Enhanced)" parentDisplayName="Contact" id="{c1c97961-2d42-4103-abf8-2fe2bdf38224}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_identity_twofactorenabled" displayName="Two Factor Enabled" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeCore (1.0.2308.4)" />
+        <Dependent type="60" displayName="Portal Contact (Enhanced)" parentDisplayName="Contact" id="{c1c97961-2d42-4103-abf8-2fe2bdf38224}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_identity_username" displayName="User Name" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeCore (1.0.2308.4)" />
+        <Dependent type="60" displayName="Portal Contact (Enhanced)" parentDisplayName="Contact" id="{c1c97961-2d42-4103-abf8-2fe2bdf38224}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_organizationname" displayName="Organization Name" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeCoreDependencies (1.0.2305.1)" />
+        <Dependent type="60" displayName="Profile Web Form (Enhanced) - Japanese" parentDisplayName="Contact" id="{01124dd8-9bff-4cc0-bb33-ea9d943c3f9f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_organizationname" displayName="Organization Name" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeCoreDependencies (1.0.2305.1)" />
+        <Dependent type="60" displayName="Profile Web Form (Enhanced)" parentDisplayName="Contact" id="{bddc0100-0dbe-4562-aafe-31d08c8ab506}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_publicprofilecopy" displayName="Public Profile Copy" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeCore (1.0.2308.4)" />
+        <Dependent type="60" displayName="Profile Web Form (Enhanced) - Japanese" parentDisplayName="Contact" id="{01124dd8-9bff-4cc0-bb33-ea9d943c3f9f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_publicprofilecopy" displayName="Public Profile Copy" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeCore (1.0.2308.4)" />
+        <Dependent type="60" displayName="Profile Web Form (Enhanced)" parentDisplayName="Contact" id="{bddc0100-0dbe-4562-aafe-31d08c8ab506}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_timezone" displayName="Time Zone" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeCoreDependencies (1.0.2305.1)" />
+        <Dependent type="60" displayName="Portal Contact (Enhanced)" parentDisplayName="Contact" id="{c1c97961-2d42-4103-abf8-2fe2bdf38224}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="defaultpricelevelid" displayName="Price List" parentSchemaName="contact" parentDisplayName="Contact" solution="msdynce_ProductManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Portal Contact (Enhanced)" parentDisplayName="Contact" id="{c1c97961-2d42-4103-abf8-2fe2bdf38224}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msa_managingpartnerid" displayName="Managing Partner" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeCoreDependencies (1.0.2305.1)" />
+        <Dependent type="2" schemaName="parentcustomerid" displayName="Company Name" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_contactkpiid" displayName="KPI" parentSchemaName="contact" parentDisplayName="Contact" solution="RelationshipAnalytics (9.0.3.3196)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_contactkpiitem_contact_contactkpiid" displayName="msdyn_msdyn_contactkpiitem_contact_contactkpiid" parentSchemaName="msdyn_contactkpiitem" parentDisplayName="Contact KPI Item" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyncrm_contactid" displayName="SendNow Contact" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftDynamics_QuickSend (1.99.2020.0)" />
+        <Dependent type="10" schemaName="msdyncrm_quicksendemail_contact" displayName="msdyncrm_quicksendemail_contact" parentSchemaName="msdyncrm_quicksendemail" parentDisplayName="Quick Send Email" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyncrm_customerjourneyid" displayName="Source customer journey (outbound marketing)" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftDynamics_Marketing (1.99.2020.0)" />
+        <Dependent type="10" schemaName="msdyncrm_msdyncrm_customerjourney_contact_customerjourneyid" displayName="msdyncrm_msdyncrm_customerjourney_contact_customerjourneyid" parentSchemaName="msdyncrm_customerjourney" parentDisplayName="Customer journey" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyncrm_emailid" displayName="Source email (outbound marketing)" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftDynamics_Marketing (1.99.2020.0)" />
+        <Dependent type="10" schemaName="msdyncrm_msdyncrm_marketingemail_contact_emailid" displayName="msdyncrm_msdyncrm_marketingemail_contact_emailid" parentSchemaName="msdyncrm_marketingemail" parentDisplayName="Marketing email" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyncrm_marketingformid" displayName="Source form (outbound marketing)" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftDynamics_Marketing (1.99.2020.0)" />
+        <Dependent type="10" schemaName="msdyncrm_msdyncrm_marketingform_contact_marketingformid" displayName="msdyncrm_msdyncrm_marketingform_contact_marketingformid" parentSchemaName="msdyncrm_marketingform" parentDisplayName="Marketing form" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyncrm_marketingpageid" displayName="Source landing page (outbound marketing)" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftDynamics_Marketing (1.99.2020.0)" />
+        <Dependent type="10" schemaName="msdyncrm_msdyncrm_marketingpage_contact_marketingpageid" displayName="msdyncrm_msdyncrm_marketingpage_contact_marketingpageid" parentSchemaName="msdyncrm_marketingpage" parentDisplayName="Marketing page" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyncrm_segmentmemberid" displayName="SegmentMember" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftDynamics_Marketing (1.99.2020.0)" />
+        <Dependent type="10" schemaName="msdyncrm_msdyncrm_segment_contact" displayName="msdyncrm_msdyncrm_segment_contact" parentSchemaName="msdyncrm_segment" parentDisplayName="Segment" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdynmkt_customerjourneyid" displayName="Source customer journey" parentSchemaName="contact" parentDisplayName="Contact" solution="DynamicsMKT_Forms (1.1.32267.119)" />
+        <Dependent type="10" schemaName="msdynmkt_msdynmkt_journey_contact_customerjourneyid" displayName="msdynmkt_msdynmkt_journey_contact_customerjourneyid" parentSchemaName="msdynmkt_journey" parentDisplayName="Journey" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdynmkt_emailid" displayName="Source email" parentSchemaName="contact" parentDisplayName="Contact" solution="DynamicsMKT_Forms (1.1.32267.119)" />
+        <Dependent type="10" schemaName="msdynmkt_msdynmkt_email_contact_emailid" displayName="msdynmkt_msdynmkt_email_contact_emailid" parentSchemaName="msdynmkt_email" parentDisplayName="Email" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdynmkt_marketingformid" displayName="Source form" parentSchemaName="contact" parentDisplayName="Contact" solution="DynamicsMKT_Forms (1.1.32267.119)" />
+        <Dependent type="10" schemaName="msdynmkt_msdynmkt_marketingform_contact_marketingformid" displayName="msdynmkt_msdynmkt_marketingform_contact_marketingformid" parentSchemaName="msdynmkt_marketingform" parentDisplayName="Form" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msevtmgt_contactid" displayName="Contact" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftDynamics_EventManagement (1.51.32267.18)" />
+        <Dependent type="10" schemaName="msevtmgt_checkin_contact" displayName="msevtmgt_checkin_contact" parentSchemaName="msevtmgt_checkin" parentDisplayName="Check-in" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msevtmgt_originatingeventid" displayName="Originating event" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftDynamics_EventManagement (1.51.32267.18)" />
+        <Dependent type="10" schemaName="msevtmgt_msevtmgt_event_contact_originatingeventid" displayName="msevtmgt_msevtmgt_event_contact_originatingeventid" parentSchemaName="msevtmgt_event" parentDisplayName="Event" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msgdpr_consentchangesourceformid" displayName="consent change source form Id" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftDynamics_MktConsentManagement (1.99.2020.0)" />
+        <Dependent type="10" schemaName="msdyncrm_msdyncrm_marketingform_contact_marketingformid" displayName="msdyncrm_msdyncrm_marketingform_contact_marketingformid" parentSchemaName="msdyncrm_marketingform" parentDisplayName="Marketing form" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msgdpr_gdprparentid" displayName="Parent or custodian" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftDynamics_MktConsentManagement (1.99.2020.0)" />
+        <Dependent type="2" schemaName="parentcustomerid" displayName="Company Name" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="mspp_userpreferredlcid" displayName="Preferred Language" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeExtensions (1.0.2310.1)" />
+        <Dependent type="60" displayName="Profile Web Form (Enhanced) - Japanese" parentDisplayName="Contact" id="{01124dd8-9bff-4cc0-bb33-ea9d943c3f9f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="mspp_userpreferredlcid" displayName="Preferred Language" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeExtensions (1.0.2310.1)" />
+        <Dependent type="60" displayName="Profile Web Form (Enhanced)" parentDisplayName="Contact" id="{bddc0100-0dbe-4562-aafe-31d08c8ab506}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_contactkpiitemid" displayName="Unique Identifier for Entity Instances" parentSchemaName="msdyn_contactkpiitem" parentDisplayName="Contact KPI Item" solution="RelationshipAnalytics (9.0.3.3196)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_contactkpiitem_contact_contactkpiid" displayName="msdyn_msdyn_contactkpiitem_contact_contactkpiid" parentSchemaName="msdyn_contactkpiitem" parentDisplayName="Contact KPI Item" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_name" displayName="Custom Entity Name" parentSchemaName="msdyn_contactkpiitem" parentDisplayName="Contact KPI Item" solution="RelationshipAnalytics (9.0.3.3196)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_contactkpiitem_contact_contactkpiid" displayName="msdyn_msdyn_contactkpiitem_contact_contactkpiid" parentSchemaName="msdyn_contactkpiitem" parentDisplayName="Contact KPI Item" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyncrm_customerjourneyid" displayName="Customer journey" parentSchemaName="msdyncrm_customerjourney" parentDisplayName="Customer journey" solution="MicrosoftDynamics_Marketing (1.99.2020.0)" />
+        <Dependent type="10" schemaName="msdyncrm_msdyncrm_customerjourney_contact_customerjourneyid" displayName="msdyncrm_msdyncrm_customerjourney_contact_customerjourneyid" parentSchemaName="msdyncrm_customerjourney" parentDisplayName="Customer journey" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyncrm_name" displayName="Name" parentSchemaName="msdyncrm_customerjourney" parentDisplayName="Customer journey" solution="MicrosoftDynamics_Marketing (1.99.2020.0)" />
+        <Dependent type="10" schemaName="msdyncrm_msdyncrm_customerjourney_contact_customerjourneyid" displayName="msdyncrm_msdyncrm_customerjourney_contact_customerjourneyid" parentSchemaName="msdyncrm_customerjourney" parentDisplayName="Customer journey" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyncrm_marketingemailid" displayName="Marketing email" parentSchemaName="msdyncrm_marketingemail" parentDisplayName="Marketing email" solution="MicrosoftDynamics_Marketing (1.99.2020.0)" />
+        <Dependent type="10" schemaName="msdyncrm_msdyncrm_marketingemail_contact_emailid" displayName="msdyncrm_msdyncrm_marketingemail_contact_emailid" parentSchemaName="msdyncrm_marketingemail" parentDisplayName="Marketing email" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyncrm_name" displayName="Name" parentSchemaName="msdyncrm_marketingemail" parentDisplayName="Marketing email" solution="MicrosoftDynamics_Marketing (1.99.2020.0)" />
+        <Dependent type="10" schemaName="msdyncrm_msdyncrm_marketingemail_contact_emailid" displayName="msdyncrm_msdyncrm_marketingemail_contact_emailid" parentSchemaName="msdyncrm_marketingemail" parentDisplayName="Marketing email" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyncrm_marketingformid" displayName="Marketing form" parentSchemaName="msdyncrm_marketingform" parentDisplayName="Marketing form" solution="MicrosoftDynamics_Marketing (1.99.2020.0)" />
+        <Dependent type="10" schemaName="msdyncrm_msdyncrm_marketingform_contact_marketingformid" displayName="msdyncrm_msdyncrm_marketingform_contact_marketingformid" parentSchemaName="msdyncrm_marketingform" parentDisplayName="Marketing form" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyncrm_name" displayName="Name" parentSchemaName="msdyncrm_marketingform" parentDisplayName="Marketing form" solution="MicrosoftDynamics_Marketing (1.99.2020.0)" />
+        <Dependent type="10" schemaName="msdyncrm_msdyncrm_marketingform_contact_marketingformid" displayName="msdyncrm_msdyncrm_marketingform_contact_marketingformid" parentSchemaName="msdyncrm_marketingform" parentDisplayName="Marketing form" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyncrm_marketingpageid" displayName="Marketing page" parentSchemaName="msdyncrm_marketingpage" parentDisplayName="Marketing page" solution="MicrosoftDynamics_Marketing (1.99.2020.0)" />
+        <Dependent type="10" schemaName="msdyncrm_msdyncrm_marketingpage_contact_marketingpageid" displayName="msdyncrm_msdyncrm_marketingpage_contact_marketingpageid" parentSchemaName="msdyncrm_marketingpage" parentDisplayName="Marketing page" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyncrm_name" displayName="Name" parentSchemaName="msdyncrm_marketingpage" parentDisplayName="Marketing page" solution="MicrosoftDynamics_Marketing (1.99.2020.0)" />
+        <Dependent type="10" schemaName="msdyncrm_msdyncrm_marketingpage_contact_marketingpageid" displayName="msdyncrm_msdyncrm_marketingpage_contact_marketingpageid" parentSchemaName="msdyncrm_marketingpage" parentDisplayName="Marketing page" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyncrm_name" displayName="Name" parentSchemaName="msdyncrm_quicksendemail" parentDisplayName="Quick Send Email" solution="MicrosoftDynamics_QuickSend (1.99.2020.0)" />
+        <Dependent type="10" schemaName="msdyncrm_quicksendemail_contact" displayName="msdyncrm_quicksendemail_contact" parentSchemaName="msdyncrm_quicksendemail" parentDisplayName="Quick Send Email" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyncrm_quicksendemailid" displayName="Quick Send Email" parentSchemaName="msdyncrm_quicksendemail" parentDisplayName="Quick Send Email" solution="MicrosoftDynamics_QuickSend (1.99.2020.0)" />
+        <Dependent type="10" schemaName="msdyncrm_quicksendemail_contact" displayName="msdyncrm_quicksendemail_contact" parentSchemaName="msdyncrm_quicksendemail" parentDisplayName="Quick Send Email" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyncrm_segmentid" displayName="Segment" parentSchemaName="msdyncrm_segment" parentDisplayName="Segment" solution="MicrosoftDynamics_Marketing (1.99.2020.0)" />
+        <Dependent type="10" schemaName="msdyncrm_msdyncrm_segment_contact" displayName="msdyncrm_msdyncrm_segment_contact" parentSchemaName="msdyncrm_segment" parentDisplayName="Segment" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyncrm_segmentname" displayName="Name" parentSchemaName="msdyncrm_segment" parentDisplayName="Segment" solution="MicrosoftDynamics_Marketing (1.99.2020.0)" />
+        <Dependent type="10" schemaName="msdyncrm_msdyncrm_segment_contact" displayName="msdyncrm_msdyncrm_segment_contact" parentSchemaName="msdyncrm_segment" parentDisplayName="Segment" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdynmkt_emailid" displayName="Email" parentSchemaName="msdynmkt_email" parentDisplayName="Email" solution="DynamicsMKT_EmailChannel (1.1.32267.119)" />
+        <Dependent type="10" schemaName="msdynmkt_msdynmkt_email_contact_emailid" displayName="msdynmkt_msdynmkt_email_contact_emailid" parentSchemaName="msdynmkt_email" parentDisplayName="Email" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdynmkt_name" displayName="Name" parentSchemaName="msdynmkt_email" parentDisplayName="Email" solution="DynamicsMKT_EmailChannel (1.1.32267.119)" />
+        <Dependent type="10" schemaName="msdynmkt_msdynmkt_email_contact_emailid" displayName="msdynmkt_msdynmkt_email_contact_emailid" parentSchemaName="msdynmkt_email" parentDisplayName="Email" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdynmkt_journeyid" displayName="Journey" parentSchemaName="msdynmkt_journey" parentDisplayName="Journey" solution="DynamicsMKT_CxpOrchestrationUI (1.1.32267.119)" />
+        <Dependent type="10" schemaName="msdynmkt_msdynmkt_journey_contact_customerjourneyid" displayName="msdynmkt_msdynmkt_journey_contact_customerjourneyid" parentSchemaName="msdynmkt_journey" parentDisplayName="Journey" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdynmkt_name" displayName="Name" parentSchemaName="msdynmkt_journey" parentDisplayName="Journey" solution="DynamicsMKT_CxpOrchestrationUI (1.1.32267.119)" />
+        <Dependent type="10" schemaName="msdynmkt_msdynmkt_journey_contact_customerjourneyid" displayName="msdynmkt_msdynmkt_journey_contact_customerjourneyid" parentSchemaName="msdynmkt_journey" parentDisplayName="Journey" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdynmkt_marketingformid" displayName="Form ID" parentSchemaName="msdynmkt_marketingform" parentDisplayName="Form" solution="DynamicsMKT_Forms (1.1.32267.119)" />
+        <Dependent type="10" schemaName="msdynmkt_msdynmkt_marketingform_contact_marketingformid" displayName="msdynmkt_msdynmkt_marketingform_contact_marketingformid" parentSchemaName="msdynmkt_marketingform" parentDisplayName="Form" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdynmkt_name" displayName="Name" parentSchemaName="msdynmkt_marketingform" parentDisplayName="Form" solution="DynamicsMKT_Forms (1.1.32267.119)" />
+        <Dependent type="10" schemaName="msdynmkt_msdynmkt_marketingform_contact_marketingformid" displayName="msdynmkt_msdynmkt_marketingform_contact_marketingformid" parentSchemaName="msdynmkt_marketingform" parentDisplayName="Form" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msevtmgt_checkinid" displayName="Check-in" parentSchemaName="msevtmgt_checkin" parentDisplayName="Check-in" solution="MicrosoftDynamics_EventManagement (1.51.32267.18)" />
+        <Dependent type="10" schemaName="msevtmgt_checkin_contact" displayName="msevtmgt_checkin_contact" parentSchemaName="msevtmgt_checkin" parentDisplayName="Check-in" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msevtmgt_name" displayName="Name" parentSchemaName="msevtmgt_checkin" parentDisplayName="Check-in" solution="MicrosoftDynamics_EventManagement (1.51.32267.18)" />
+        <Dependent type="10" schemaName="msevtmgt_checkin_contact" displayName="msevtmgt_checkin_contact" parentSchemaName="msevtmgt_checkin" parentDisplayName="Check-in" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msevtmgt_eventid" displayName="Event" parentSchemaName="msevtmgt_event" parentDisplayName="Event" solution="MicrosoftDynamics_EventManagement (1.51.32267.18)" />
+        <Dependent type="10" schemaName="msevtmgt_msevtmgt_event_contact_originatingeventid" displayName="msevtmgt_msevtmgt_event_contact_originatingeventid" parentSchemaName="msevtmgt_event" parentDisplayName="Event" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msevtmgt_name" displayName="Event name" parentSchemaName="msevtmgt_event" parentDisplayName="Event" solution="MicrosoftDynamics_EventManagement (1.51.32267.18)" />
+        <Dependent type="10" schemaName="msevtmgt_msevtmgt_event_contact_originatingeventid" displayName="msevtmgt_msevtmgt_event_contact_originatingeventid" parentSchemaName="msevtmgt_event" parentDisplayName="Event" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Web Roles" displayName="Active Web Roles" parentSchemaName="mspp_webrole" parentDisplayName="Web Role" solution="PowerPages_Apps (1.0.2309.1)" id="{735de4f0-c287-42eb-b5e6-2f01a75a40fb}" />
+        <Dependent type="60" displayName="Portal Contact (Enhanced)" parentDisplayName="Contact" id="{c1c97961-2d42-4103-abf8-2fe2bdf38224}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active External Identities" displayName="Active External Identities" parentSchemaName="adx_externalidentity" parentDisplayName="External Identity" solution="PowerPages_RuntimeCore (1.0.2308.4)" id="{93fe9ed1-cabf-4755-9f63-4f3f989084e6}" />
+        <Dependent type="60" displayName="Portal Contact (Enhanced)" parentDisplayName="Contact" id="{c1c97961-2d42-4103-abf8-2fe2bdf38224}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Profile Web Form (Enhanced) - Japanese" parentDisplayName="Contact" solution="PowerPages_RuntimeCore (1.0.2308.4)" id="{01124dd8-9bff-4cc0-bb33-ea9d943c3f9f}" />
+        <Dependent type="60" displayName="Profile Web Form (Enhanced) - Japanese" parentDisplayName="Contact" id="{01124dd8-9bff-4cc0-bb33-ea9d943c3f9f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Information" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Profile Web Form (Enhanced)" parentDisplayName="Contact" solution="PowerPages_RuntimeCore (1.0.2308.4)" id="{bddc0100-0dbe-4562-aafe-31d08c8ab506}" />
+        <Dependent type="60" displayName="Profile Web Form (Enhanced)" parentDisplayName="Contact" id="{bddc0100-0dbe-4562-aafe-31d08c8ab506}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Portal Contact (Enhanced)" parentDisplayName="Contact" solution="PowerPages_RuntimeCore (1.0.2308.4)" id="{c1c97961-2d42-4103-abf8-2fe2bdf38224}" />
+        <Dependent type="60" displayName="Portal Contact (Enhanced)" parentDisplayName="Contact" id="{c1c97961-2d42-4103-abf8-2fe2bdf38224}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Invite Web Form" parentDisplayName="Contact" solution="PowerPages_RuntimeCore (1.0.2308.4)" id="{d6190b35-9474-4098-9698-33f6627eb3bf}" />
+        <Dependent type="60" displayName="Invite Web Form" parentDisplayName="Contact" id="{d6190b35-9474-4098-9698-33f6627eb3bf}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="AppCommon/Contact/Contact_main_system_library.js" displayName="AppCommon/Contact/Contact_main_system_library.js" solution="msdynce_AppCommon (9.0.4.0066)" />
+        <Dependent type="60" displayName="Profile Web Form (Enhanced) - Japanese" parentDisplayName="Contact" id="{01124dd8-9bff-4cc0-bb33-ea9d943c3f9f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="AppCommon/Contact/Contact_main_system_library.js" displayName="AppCommon/Contact/Contact_main_system_library.js" solution="msdynce_AppCommon (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="AppCommon/Contact/Contact_main_system_library.js" displayName="AppCommon/Contact/Contact_main_system_library.js" solution="msdynce_AppCommon (9.0.4.0066)" />
+        <Dependent type="60" displayName="Profile Web Form (Enhanced)" parentDisplayName="Contact" id="{bddc0100-0dbe-4562-aafe-31d08c8ab506}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="AppCommon/Contact/Contact_main_system_library.js" displayName="AppCommon/Contact/Contact_main_system_library.js" solution="msdynce_AppCommon (9.0.4.0066)" />
+        <Dependent type="60" displayName="Invite Web Form" parentDisplayName="Contact" id="{d6190b35-9474-4098-9698-33f6627eb3bf}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/ActivityFeeds.Form.js" displayName="msdyn_/ActivityFeeds.Form.js" solution="ActivityFeedsCore (9.0.0.0009)" />
+        <Dependent type="60" displayName="Profile Web Form (Enhanced) - Japanese" parentDisplayName="Contact" id="{01124dd8-9bff-4cc0-bb33-ea9d943c3f9f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/ActivityFeeds.Form.js" displayName="msdyn_/ActivityFeeds.Form.js" solution="ActivityFeedsCore (9.0.0.0009)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/ActivityFeeds.Form.js" displayName="msdyn_/ActivityFeeds.Form.js" solution="ActivityFeedsCore (9.0.0.0009)" />
+        <Dependent type="60" displayName="Profile Web Form (Enhanced)" parentDisplayName="Contact" id="{bddc0100-0dbe-4562-aafe-31d08c8ab506}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/ActivityFeeds.Form.js" displayName="msdyn_/ActivityFeeds.Form.js" solution="ActivityFeedsCore (9.0.0.0009)" />
+        <Dependent type="60" displayName="Portal Contact (Enhanced)" parentDisplayName="Contact" id="{c1c97961-2d42-4103-abf8-2fe2bdf38224}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/ActivityFeeds.Form.js" displayName="msdyn_/ActivityFeeds.Form.js" solution="ActivityFeedsCore (9.0.0.0009)" />
+        <Dependent type="60" displayName="Invite Web Form" parentDisplayName="Contact" id="{d6190b35-9474-4098-9698-33f6627eb3bf}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/RecordWall.htm" displayName="msdyn_/RecordWall.htm" solution="ActivityFeedsCore (9.0.0.0009)" />
+        <Dependent type="60" displayName="Profile Web Form (Enhanced) - Japanese" parentDisplayName="Contact" id="{01124dd8-9bff-4cc0-bb33-ea9d943c3f9f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/RecordWall.htm" displayName="msdyn_/RecordWall.htm" solution="ActivityFeedsCore (9.0.0.0009)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/RecordWall.htm" displayName="msdyn_/RecordWall.htm" solution="ActivityFeedsCore (9.0.0.0009)" />
+        <Dependent type="60" displayName="Profile Web Form (Enhanced)" parentDisplayName="Contact" id="{bddc0100-0dbe-4562-aafe-31d08c8ab506}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/RecordWall.htm" displayName="msdyn_/RecordWall.htm" solution="ActivityFeedsCore (9.0.0.0009)" />
+        <Dependent type="60" displayName="Portal Contact (Enhanced)" parentDisplayName="Contact" id="{c1c97961-2d42-4103-abf8-2fe2bdf38224}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/RecordWall.htm" displayName="msdyn_/RecordWall.htm" solution="ActivityFeedsCore (9.0.0.0009)" />
+        <Dependent type="60" displayName="Invite Web Form" parentDisplayName="Contact" id="{d6190b35-9474-4098-9698-33f6627eb3bf}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="mspp_entities/subgrid_filtering.js" displayName="mspp_entities/subgrid_filtering.js" solution="PowerPages_AppResources (1.0.2308.1)" />
+        <Dependent type="60" displayName="Portal Contact (Enhanced)" parentDisplayName="Contact" id="{c1c97961-2d42-4103-abf8-2fe2bdf38224}" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>
